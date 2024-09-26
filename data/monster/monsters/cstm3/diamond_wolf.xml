@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Diamond Wolf" nameDescription="a diamond wolf" race="undead" experience="3431132" speed="650">
+	<health now="184234" max="184234" />
+	<look type="391" corpse="13584" />
+	<targetchange interval="4000" chance="10" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="1" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="1" />
+		<flag staticattack="90" />
+		<flag runonhealth="0" />
+		<flag canwalkonenergy="1" />
+		<flag canwalkonfire="1" />
+		<flag canwalkonpoison="1" />
+		<flag ignorespawnblock="1"/>		
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="0" max="-6999" />
+		<attack name="earth" interval="2000" chance="15" length="3" spread="2" min="-60" max="-6999">
+			<attribute key="areaEffect" value="stones" />
+		</attack>
+		<attack name="ice" interval="2000" chance="15" range="6" radius="3" target="1" min="-80" max="-6999">
+			<attribute key="shootEffect" value="smallice" />
+			<attribute key="areaEffect" value="giantice" />
+		</attack>
+		<attack name="manadrain" interval="2000" chance="10" range="7" min="-25" max="-6999" />
+	</attacks>
+	<defenses armor="1" defense="1">
+		<defense name="healing" interval="2000" chance="5" min="15" max="1234">
+			<attribute key="areaEffect" value="blueshimmer" />
+		</defense>
+	</defenses>
+	<immunities>
+		<immunity paralyze="1" />
+		<immunity invisible="1" />
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Raaarrr!" />
+		<voice sentence="Aaaauuuuuooooooo!" />
+	</voices>
+	<loot>
+	<item name="crystal coin" countmax="62" chance="22222" />
+	<item name="swamp grass" countmax="3" chance="22222" />
+    <item id="2160" countmax="7" chance="22000"/>	
+	<item id="18413" countmax="3" chance="22000" /> <!-- low crafting eq -->
+	<item id="18414" countmax="3" chance="20000" />
+	<item id="18415" countmax="3" chance="19000" />
+	<item id="18416" countmax="3" chance="16000" /> <!-- med crafting eq -->
+	<item id="18417" countmax="3" chance="16000" />
+	<item id="18418" countmax="3" chance="16000" />		 
+	<item id="18421" countmax="4" chance="16000" /> <!-- hard crafting eq -->
+	<item id="18420" countmax="4" chance="16000" />
+	<item id="18419" countmax="4" chance="16000" />
+	<item id="11218" countmax="4" chance="16000" />	
+	</loot>
+</monster>

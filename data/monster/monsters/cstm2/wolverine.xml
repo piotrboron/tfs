@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Wolverine" nameDescription="a Wolverine" race="venom" experience="90000" speed="990" manacost="0"> 
+<health now="14500" max="14500"/>
+<look type="308" corpse="6080"/>
+<strategy attack="100" defense="0"/>
+<flags>
+<flag summonable="0"/>
+<flag attackable="1"/>
+<flag hostile="1"/>
+<flag illusionable="1"/>
+<flag convinceable="0"/>
+<flag pushable="0"/>
+<flag canpushitems="1"/>
+<flag canpushcreatures="0"/>
+<flag targetdistance="1"/>
+<flag staticattack="90"/>
+<flag runonhealth="0"/>
+</flags>
+  <attacks>
+    <attack name="melee" interval="2000" min="-222" max="-888"/>
+	 <attack name="death" interval="2000" chance="30" range="1" radius="1" target="1" min="-100" max="-800">
+		<attribute key="shootEffect" value="suddendeath"/>
+		<attribute key="areaEffect" value="mortarea"/>
+			</attack>
+  </attacks>
+<defenses armor="16" defense="19"/>
+  <elements>
+		<element physicalPercent="-1"/>
+		<element icePercent="-1"/>
+		<element energyPercent="-1"/>
+		<element holyPercent="-1"/>
+		<element earth="-1"/>
+		<element death="-1"/>
+	</elements>   
+  <immunities>
+    <immunity physical="0"/>
+    <immunity energy="0"/>
+    <immunity poison="0"/>
+    <immunity lifedrain="1"/>
+    <immunity paralyze="1"/>
+    <immunity outfit="1"/>
+    <immunity drunk="1"/>
+    <immunity invisible="1"/>
+  </immunities>
+<voices interval="5000" chance="20">
+<voice sentence="AGRRRR, I need meat!"/>
+<voice sentence="Auuuuuuuu... Auuuuuuu!"/>
+</voices>
+ <loot>
+		<item name="gold coin" countmax="100" chance="33400" />
+		<item name="gold coin" countmax="100" chance="33400" />
+		<item name="platinum coin" countmax="6" chance="49610" />
+		<item id="18413" countmax="2" chance="22000" /> <!-- low crafting eq -->
+		<item id="18414" countmax="2" chance="20000" />
+		<item id="18415" countmax="2" chance="19000" />
+		<item id="18416" countmax="2" chance="16000" /> <!-- med crafting eq -->
+		<item id="18417" countmax="2" chance="16000" />
+		<item id="18418" countmax="2" chance="16000" />		    
+ </loot>
+</monster>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="Mythical Stone of Madness" nameDescription="a mythical stone of madness" race="undead" experience="100000" speed="0" skull = "black">
+  <health now="40000" max="40000"/>
+	<look typeex="12383" corpse="6027"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="40"/>
+		<flag runonhealth="0"/>
+		<flag ignorespawnblock="1" />
+	</flags>
+	
+	<attacks>
+		<attack name="melee" interval="2000" min="-1" max="-2"/>
+			        <attack name="fire" interval="1064" chance="55" target="2" min="-1" max="-2"> 
+            <attribute key="shootEffect" value="burstarrow"/> 
+        </attack> 
+		
+			        <attack name="death" interval="2000" chance="60" target="2" min="-1" max="-2"> 
+            <attribute key="shootEffect" value="suddendeath"/> 
+        </attack> 
+		
+		
+		 <attack name="earth" interval="1753" chance="45" target="0" radius="6" min="-1" max="-2"> 
+            <attribute key="areaEffect" value="smallplants"/> 
+        </attack>
+		
+        <attack name="fire" interval="1753" chance="25" target="0" radius="9" min="-1" max="-2"> 
+            <attribute key="areaEffect" value="fire"/> 
+        </attack> 
+
+	</attacks>
+
+	
+
+	<elements>
+        <element icePercent="20"/> 
+        <element firePercent="20"/> 
+        <element physicalPercent="-40"/> 
+        <element deathPercent="20"/> 
+        <element holyPercent="20"/> 
+        <element energyPercent="20"/> 
+        <element earthPercent="20"/> 
+	</elements>
+	<immunities>
+		<immunity lifedrain="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+
+  <summons maxSummons="5">
+    <summon name="Fury" interval="1000" chance="26"/>
+    <summon name="Nightmare" interval="1000" chance="26"/>
+  </summons>
+
+	<loot>
+		<item name="gold coin" countmax="30" chance="88000" />
+		<item name="small stone" countmax="10" chance="15800" />
+		<item name="old iron" chance="44000" />
+		<item id="22614" countmax="1" chance="64000" />
+		<item id="2268" countmax="100" chance="88000" />
+		<item id="26029" countmax="100" chance="88000" />
+	<item id="18413" countmax="3" chance="22000" /> <!-- low crafting eq -->
+	<item id="18414" countmax="3" chance="20000" />
+	<item id="18415" countmax="3" chance="19000" />
+	<item id="18416" countmax="3" chance="16000" /> <!-- med crafting eq -->
+	<item id="18417" countmax="3" chance="16000" />
+	<item id="18418" countmax="3" chance="16000" />		 
+	<item id="18421" countmax="3" chance="16000" /> <!-- hard crafting eq -->
+	<item id="18420" countmax="3" chance="16000" />
+	<item id="18419" countmax="3" chance="16000" />				
+	</loot>
+
+</monster>

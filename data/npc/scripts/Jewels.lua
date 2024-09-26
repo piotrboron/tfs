@@ -1,0 +1,47 @@
+local keywordHandler = KeywordHandler:new()
+local npcHandler = NpcHandler:new(keywordHandler)
+NpcSystem.parseParameters(npcHandler)
+
+function onCreatureAppear(cid)			npcHandler:onCreatureAppear(cid)			end
+function onCreatureDisappear(cid)		npcHandler:onCreatureDisappear(cid)			end
+function onCreatureSay(cid, type, msg)	npcHandler:onCreatureSay(cid, type, msg)	end
+function onThink()						npcHandler:onThink()						end
+
+local shopModule = ShopModule:new()
+npcHandler:addModule(shopModule)
+
+shopModule:addBuyableItem({'time ring'}, 2169, 5000, 'time ring')
+shopModule:addBuyableItem({'dwarven ring'}, 2213, 5000, 'dwarven ring')
+shopModule:addBuyableItem({'iron ore'}, 5880, 2000000, 'dwarven ring')
+shopModule:addBuyableItem({'blue crystal shard'}, 18413, 30000, 'blue crystal shard')
+shopModule:addBuyableItem({'violet crystal shard'}, 18414, 30000, 'violet crystal shard')
+shopModule:addBuyableItem({'green crystal shard'}, 18415, 30000, 'green crystal shard')
+shopModule:addBuyableItem({'green crystal splinter'}, 18416, 40000, 'green crystal splinter')
+shopModule:addBuyableItem({'brown crystal splinter'}, 18417, 40000, 'brown crystal shard')
+shopModule:addBuyableItem({'blue crystal splinter'}, 18418, 30000, 'blue crystal splinter')
+shopModule:addSellableItem({'energy ring'}, 2167, 5000, 'energy ring')
+shopModule:addSellableItem({'time ring'}, 2169, 400, 'time ring')
+shopModule:addSellableItem({'ring of healing'}, 2214, 600, 'ring of healing')
+shopModule:addSellableItem({'energy ring'}, 2167, 160, 'energy ring')
+shopModule:addSellableItem({'white pearl'}, 2143, 160, 'white pearl')
+shopModule:addSellableItem({'black pearl'}, 2144, 280, 'black pearl')
+shopModule:addSellableItem({'silver brooch'}, 2134, 150, 'silver brooch')
+shopModule:addSellableItem({'family brooch'}, 2318, 150, 'family brooch')
+shopModule:addSellableItem({'dragonfetish'}, 2319, 300, 'dragonfetish')
+shopModule:addSellableItem({'small sapphire'}, 2146, 250, 'small sapphire')
+shopModule:addSellableItem({'small diamond'}, 2145, 300, 'small diamond')
+shopModule:addSellableItem({'small ruby'}, 2147, 250, 'small ruby')
+shopModule:addSellableItem({'small emerald'}, 2149, 250, 'small emerald')
+shopModule:addSellableItem({'small amethyst'}, 2150, 200, 'small amethyst')
+shopModule:addSellableItem({'small topaz'}, 9970, 250, 'small topaz')
+shopModule:addSellableItem({'gold ingot'}, 9971, 1000, 'gold ingot')
+shopModule:addSellableItem({'talon'}, 2151, 100, 'talon')
+shopModule:addSellableItem({'scarab coin'}, 2159, 100, 'scarab coin')
+shopModule:addSellableItem({'gold nugget'}, 2157, 360, 'gold nugget')
+shopModule:addSellableItem({'violet gem'}, 2153, 280, 'violet gem')
+shopModule:addSellableItem({'yellow gem'}, 2154, 280, 'yellow gem')
+shopModule:addSellableItem({'green gem'}, 2155, 280, 'green gem')
+shopModule:addSellableItem({'red gem'}, 2156, 280, 'red gem')
+shopModule:addSellableItem({'blue gem'}, 2158, 280, 'blue gem')
+
+npcHandler:addModule(FocusModule:new())

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Fisher" script="fisher.lua" walkinterval="2000" floorchange="0">
+<health now="100" max="100"/>
+<look type="128" head="58" body="68" legs="109" feet="131" addons="0"/>
+	<parameters>
+		<parameter key="message_greet" value="Hello |PLAYERNAME|. I sell fishing rods and worms. I also buy all kind of fishes, say {trade} to see what I got to offer!" />
+	</parameters>
+</npc>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Evil Warlock" nameDescription="an evil warlock" race="blood" experience="390000" speed="328" manacost="0">
+  <health now="25000" max="25000"/>
+  <look type="133" head="116" body="38" legs="132" feet="132" addons="3" corpse="6080"/>
+  <targetchange interval="5000" chance="30"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="1000"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="2000" min="0" max="-2500"/>
+    <attack name="ice" interval="1000" chance="12" range="7" target="1" min="-1" max="-3000">
+      <attribute key="shootEffect" value="ice"/>
+	  <attribute key="areaEffect" value="iceattack"/>
+    </attack>
+	<attack name="energy" interval="1000" chance="14" range="7" target="1" min="-1" max="-3000">
+	  <attribute key="shootEffect" value="energyball"/>
+	  <attribute key="areaEffect" value="energy"/>
+	  </attack>
+    <attack name="manadrain" interval="2000" chance="24" range="7" min="-1" max="-2000">
+	<attribute key="shootEffect" value="ice"/>
+	</attack>
+    <attack name="speed" interval="2000" chance="18" range="7" speedchange="-850" duration="40000">
+	  <attribute key="shootEffect" value="smallice"/>
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </attack>
+    <attack name="fire" interval="2000" chance="28" range="7" radius="3" target="1" min="-1" max="-1500">
+      <attribute key="shootEffect" value="burstarrow"/>
+      <attribute key="areaEffect" value="firearea"/>
+    </attack>
+    <attack name="firefield" interval="2000" chance="16" range="7" radius="2" target="1">
+      <attribute key="shootEffect" value="fire"/>
+    </attack>
+    <attack name="energy" interval="1000" chance="13" length="8" spread="0" min="-1" max="-970">
+      <attribute key="areaEffect" value="bigclouds"/>
+    </attack>
+
+  </attacks>
+  <defenses armor="35" defense="30">
+    <defense name="healing" interval="1000" chance="20" min="200" max="430">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+
+  </defenses>
+<elements>
+	<element physicalPercent="-9"/>
+	<element holyPercent="-1"/>
+	<element earthPercent="1"/>
+</elements>
+  <immunities>
+    <immunity energy="1"/>
+    <immunity fire="1"/>
+    <immunity paralyze="1"/>
+    <immunity outfit="1"/>
+    <immunity drunk="1"/>
+    <immunity invisible="1"/>
+  </immunities>
+  <summons maxSummons="1">
+    <summon name="fire elemental" interval="1000" chance="13" />
+  </summons>
+  <loot>
+    <item id="2160" countmax="7" chance="22000"/>	
+	<item id="18413" countmax="2" chance="22000" /> <!-- low crafting eq -->
+	<item id="18414" countmax="2" chance="20000" />
+	<item id="18415" countmax="2" chance="19000" />
+	<item id="18416" countmax="2" chance="16000" /> <!-- med crafting eq -->
+	<item id="18417" countmax="2" chance="16000" />
+	<item id="18418" countmax="2" chance="16000" />		 
+	<item id="18421" countmax="2" chance="16000" /> <!-- hard crafting eq -->
+	<item id="18420" countmax="2" chance="16000" />
+	<item id="18419" countmax="2" chance="16000" />	
+  </loot>
+</monster>

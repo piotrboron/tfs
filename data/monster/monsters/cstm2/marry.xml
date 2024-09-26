@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <monster name="Marry" nameDescription="a Marry" race="venom" experience="127565" species="venom" speed="600" manacost="0">
+    <health now="15555" max="15555"/>
+    <look type="47" corpse="6081"/>
+    <targetchange interval="10000" chance="25"/>
+    <strategy attack="100" defense="0"/>
+<flags>
+<flag summonable="0"/>
+<flag attackable="1"/>
+<flag hostile="1"/>
+<flag illusionable="1"/>
+<flag convinceable="0"/>
+<flag pushable="0"/>
+<flag canpushitems="1"/>
+<flag canpushcreatures="0"/>
+<flag targetdistance="1"/>
+<flag staticattack="90"/>
+<flag runonhealth="10"/>
+</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="-600" max="-1666" poison="22"/>
+		<attack name="poison" interval="3000" chance="12" length="8" min="-50" max="-1500">
+			<attribute key="areaEffect" value="poison"/>
+		</attack>
+		<attack name="melee" interval="2000" chance="23" length="8" min="-50" max="-1000">
+			<attribute key="areaEffect" value="rednote"/>
+		</attack>
+	</attacks>
+<defenses armor="1" defense="1"/>
+  <elements>
+		<element physicalPercent="-1"/>
+		<element icePercent="1"/>
+		<element energyPercent="-1"/>
+		<element holyPercent="1"/>
+		<element earth="-1"/>
+		<element death="-1"/>
+	</elements>   
+  <immunities>
+    <immunity lifedrain="1"/>
+    <immunity paralyze="1"/>
+    <immunity outfit="1"/>
+    <immunity drunk="1"/>
+    <immunity invisible="1"/>
+  </immunities>
+<voices interval="5000" chance="10">
+    <voice sentence="GHAS SHAA!!! MIRE SI TO..."/>
+    <voice sentence="BORUMBE KARHA? MEMBO!"/>
+	    <voice sentence="SETENDO SETENDO!"/>
+</voices>
+  <loot>
+    <item id="2160" countmax="7" chance="22000"/>	
+	<item id="18413" countmax="2" chance="22000" /> <!-- low crafting eq -->
+	<item id="18414" countmax="2" chance="20000" />
+	<item id="18415" countmax="2" chance="19000" />
+	<item id="18416" countmax="2" chance="16000" /> <!-- med crafting eq -->
+	<item id="18417" countmax="2" chance="16000" />
+	<item id="18418" countmax="2" chance="16000" />		 
+	<item id="18421" countmax="2" chance="16000" /> <!-- hard crafting eq -->
+	<item id="18420" countmax="2" chance="16000" />
+	<item id="18419" countmax="2" chance="16000" />
+</loot>
+  </monster>

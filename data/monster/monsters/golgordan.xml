@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Golgordan" nameDescription="Golgordan" race="fire" experience="780000" speed="350">
+	<health now="300000" max="300000" />
+	<look type="12" head="128" body="62" legs="95" feet="15" corpse="8721" />
+	<targetchange interval="7000" chance="10" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="1" />
+		<flag staticattack="90" />
+		<flag runonhealth="0" />
+		<flag isboss="1" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="0" max="-2000" />
+		<attack name="death" interval="3000" chance="15" length="8" spread="0" min="-250" max="-1350">
+			<attribute key="areaEffect" value="mortarea" />
+		</attack>
+		<attack name="poisoncondition" interval="1000" chance="11" length="5" spread="2" min="-300" max="-1400">
+			<attribute key="areaEffect" value="poison" />
+		</attack>
+		<attack name="physical" interval="1000" chance="8" radius="6" target="0" min="-50" max="-1200">
+			<attribute key="areaEffect" value="groundshaker" />
+		</attack>
+		<attack name="fire" interval="2000" chance="15" radius="7" target="1" min="-50" max="-400">
+			<attribute key="areaEffect" value="firearea" />
+		</attack>
+	</attacks>
+	<defenses armor="48" defense="54" />
+	<elements>
+		<element icePercent="-10" />
+		<element holyPercent="15" />
+		<element physicalPercent="1" />
+		<element firePercent="-5" />
+	</elements>
+	<immunities>
+		<immunity death="1" />
+	</immunities>
+	<summons maxSummons="4">
+		<summon name="Burning Guard" interval="2000" chance="20" />
+	</summons>
+	<loot>
+		<item name="blue tome" chance="20000" />
+		<item id="2270" chance="12500" /><!-- mana rune -->
+		<item id="25930" chance="8333" /><!-- axe of remedy -->
+		<item id="25902" chance="25000" /><!-- chopper of mayhem -->
+		<item name="black pearl" countmax="50" chance="11111" />
+		<item name="small diamond" countmax="50" chance="25000" />
+		<item name="small sapphire" countmax="50" chance="25000" />
+		<item name="small emerald" countmax="50" chance="25000" />
+		<item name="small amethyst" countmax="50" chance="25000" />
+		<item name="talon" countmax="7" chance="12500" />
+		<item name="iron ore" countmax="30" chance="100000" />
+		<item name="crystal coin" countmax="69" chance="100000" />
+		<item name="green gem" chance="20000" />
+		<item name="blue gem" chance="14285" />
+		<item name="might ring" chance="12500" />
+		<item name="stealth ring" chance="12500" />
+		<item name="strange symbol" chance="11111" />
+		<item name="life crystal" chance="12500" />
+		<item name="mind stone" chance="20000" />
+		<item name="gold ring" chance="20000" />
+		<item name="ring of healing" chance="20000" />
+		<item name="twin axe" chance="11111" />
+		<item name="golden armor" chance="8333" />
+		<item name="magic plate armor" chance="8333" />
+		<item name="demon shield" chance="12500" />
+		<item name="crystal arrow" chance="333" />
+		<item name="demon horn" countmax="2" chance="33333" />
+		<item id="6300" chance="25000" /><!-- death ring -->
+		<item name="demonic essence" chance="100000" />
+		<item name="ruthless axe" chance="14285" />
+		<item name="assassin star" countmax="100" chance="12500" />
+		<item name="havoc blade" chance="16666" />
+		<item name="ravenwing" chance="14285" />
+		<item name="scrying crystal ball" chance="20000" />
+		<item name="great mana potion" chance="20000" />
+		<item name="great health potion" chance="20000" />
+		<item name="glacier kilt" chance="8333" />
+		<item name="great spirit potion" chance="25000" />
+		<item name="ultimate health potion" chance="25000" />
+		<item name="oceanborn leviathan armor" chance="16666" />
+		<item name="frozen plate" chance="8333" />
+		<item name="spellbook of warding" chance="20000" />
+		<item name="spellbook of mind control" chance="11111" />
+		<item name="spellbook of lost souls" chance="16666" />
+		<item name="spellscroll of prophecies" chance="25000" />
+		<item name="spellbook of dark mysteries" chance="20000" />
+	</loot>
+</monster>

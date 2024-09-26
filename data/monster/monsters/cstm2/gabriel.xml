@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Gabriel" nameDescription="a gabriel" race="venom" experience="60605005" speed="840" manacost="0"> 
+<health now="223100" max="223100"/>
+<look type="325" head="0" body="0" legs="0" feet="0" addons="1" corpse="6080"/>
+<strategy attack="100" defense="0"/>
+<flags>
+<flag summonable="0"/>
+<flag attackable="1"/>
+<flag hostile="1"/>
+<flag illusionable="1"/>
+<flag convinceable="0"/>
+<flag pushable="0"/>
+<flag canpushitems="1"/>
+<flag canpushcreatures="0"/>
+<flag targetdistance="1"/>
+<flag staticattack="90"/>
+<flag runonhealth="0"/>
+</flags>
+<attacks>
+<attack name="melee" interval="2000" min="-1000" max="-25000"/>
+<attack name="physical" interval="1000" chance="20" radius="8" target="0" min="-800" max="-32600">
+<attribute key="areaEffect" value="holyarea"/>
+</attack>
+</attacks>
+<defenses armor="16" defense="19"/>
+  <elements>
+		<element physicalPercent="-25"/>
+		<element icePercent="15"/>
+		<element energyPercent="-5"/>
+		<element holyPercent="50"/>
+		<element earth="10"/>
+		<element death="-40"/>
+	</elements>   
+  <immunities>
+    <immunity physical="0"/>
+    <immunity energy="0"/>
+    <immunity fire="1"/>
+    <immunity poison="0"/>
+    <immunity lifedrain="1"/>
+    <immunity paralyze="1"/>
+    <immunity outfit="1"/>
+    <immunity drunk="1"/>
+    <immunity invisible="1"/>
+  </immunities>
+<voices interval="5000" chance="10">
+<voice sentence="I promise you, YOU WON'T GET TO HEAVEN BEFORE MY DEATH!"/>
+</voices>
+ <loot>
+   <item id="2160" countmax="8" chance1="36666" chancemax="0"/> --Gold Coin
+   <item id="2150" countmax="1" chance1="500" chancemax="0"/> --Small Amethysts
+   <item id="2645" chance="600"/> --Steel Boots
+<item id="12410" chance="15"/>
+     <item id="11210" countmax="1" chance1="150" chancemax="0"/> -- exp scroll 
+	<item id="11217" countmax="4" chance="10000000"/> --Soul Orb
+   <item id="6558" countmax="3" chance1="5555" chancemax="0"/> --Concentrated Demonic Blood
+   <item id="2666" countmax="1" chance1="25000" chancemax="0"/> --Meat
+   <item id="6500" countmax="1" chance1="2500" chancemax="0"/> --Demonic Essence
+   <item id="1987" chance="100000"> --Bag
+       <inside>
+	      <item id="11217" countmax="3" chance="300"/> --Soul Orb
+		  <item id="9813" chance="2470"/> --
+	   	  <item id="7368" countmax="1" chance1="1200" chancemax="0"/> --Assassin Star
+           <item id="5911" chance="1800"/> --Red Piece of Cloth
+       </inside>
+   </item>
+
+ </loot>
+</monster>

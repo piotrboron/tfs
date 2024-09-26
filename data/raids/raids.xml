@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<raids>
+		<raid name="Rotworms" file="rotworms.xml" interval2="9999" margin="0" />
+		<raid name="XP Rabbits" file="xprabbits.xml" interval2="9999" margin="0" />
+</raids>

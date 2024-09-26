@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Angry Banshee" nameDescription="a angry banshee" race="undead" experience="154321" speed="650">
+	<health now="16543" max="16543" />
+	<look type="78" corpse="6019" />
+	<targetchange interval="4000" chance="10" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="1" />
+		<flag staticattack="90" />
+		<flag runonhealth="0" />
+		<flag canwalkonenergy="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="0" max="-1500" poison="3" />
+		<attack name="lifedrain" interval="2000" chance="15" radius="4" target="0" min="-100" max="-1700">
+			<attribute key="areaEffect" value="rednote" />
+		</attack>
+		<attack name="death" interval="2000" chance="5" range="1" target="1" radius="1" min="-55" max="-1000">
+			<attribute key="areaEffect" value="smallclouds" />
+		</attack>
+		<attack name="speed" interval="2000" chance="10" range="7" speedchange="-300" duration="15000">
+			<attribute key="areaEffect" value="redshimmer" />
+		</attack>
+	</attacks>
+	<defenses armor="25" defense="25">
+		<defense name="healing" interval="2000" chance="15" min="100" max="400">
+			<attribute key="areaEffect" value="blueshimmer" />
+		</defense>
+	</defenses>
+	<elements>
+		<element holyPercent="-25" />
+	</elements>
+	<immunities>
+		<immunity drown="1" />
+		<immunity lifedrain="1" />
+		<immunity paralyze="1" />
+		<immunity invisible="1" />
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Dance for me your dance of death!" />
+		<voice sentence="Let the music play!" />
+		<voice sentence="I will mourn your death!" />
+		<voice sentence="Are you ready to rock?" />
+		<voice sentence="Feel my gentle kiss of death." />
+		<voice sentence="That's what I call easy listening!" />
+		<voice sentence="IIIIEEEeeeeeehhhHHHH!" yell="1" />
+	</voices>
+  <loot>
+    <item id="2160" countmax="7" chance="22000"/>	
+	<item id="18413" countmax="2" chance="22000" /> <!-- low crafting eq -->
+	<item id="18414" countmax="2" chance="20000" />
+	<item id="18415" countmax="2" chance="19000" />
+	<item id="18416" countmax="2" chance="16000" /> <!-- med crafting eq -->
+	<item id="18417" countmax="2" chance="16000" />
+	<item id="18418" countmax="2" chance="16000" />		 
+	<item id="18421" countmax="2" chance="16000" /> <!-- hard crafting eq -->
+	<item id="18420" countmax="2" chance="16000" />
+	<item id="18419" countmax="2" chance="16000" />
+</loot>
+</monster>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Eerie" nameDescription="an eerie" race="venom" experience="71311320" speed="777" manacost="0">
+<health now="2500000" max="2500000"/>
+<look type="320" corpse="6081"/>
+<strategy attack="100" defense="0"/>
+<flags>
+<flag summonable="0"/>
+<flag attackable="1"/>
+<flag hostile="1"/>
+<flag illusionable="1"/>
+<flag convinceable="0"/>
+<flag pushable="0"/>
+<flag canpushitems="1"/>
+<flag canpushcreatures="0"/>
+<flag targetdistance="1"/>
+<flag staticattack="90"/>
+<flag runonhealth="0"/>
+<flag canwalkonenergy="1" />
+<flag canwalkonfire="1" />
+<flag canwalkonpoison="1" />
+
+</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="0" max="-11234" poison="65" />
+		<attack name="lifedrain" interval="3000" chance="20" range="1" min="-75" max="-9000" />
+		<attack name="energy" interval="2000" chance="20" range="7" min="-60" max="-14555">
+			<attribute key="shootEffect" value="energy" />
+			<attribute key="areaEffect" value="energy" />
+		</attack>
+		<attack name="physical" interval="3000" chance="20" range="7" min="-60" max="-14555">
+			<attribute key="shootEffect" value="suddendeath" />
+			<attribute key="areaEffect" value="mortarea" />
+		</attack>
+		<attack name="speed" interval="1000" chance="44" radius="6" target="0" speedchange="-777" duration="60000">
+			<attribute key="areaEffect" value="poison" />
+		</attack>
+		<attack name="drunk" interval="1000" chance="44" range="7">
+			<attribute key="shootEffect" value="energy" />
+			<attribute key="areaEffect" value="energyarea" />
+		</attack>
+		<attack name="outfit" interval="1000" chance="15" range="7" monster="pig" duration="12000">
+			<attribute key="areaEffect" value="blueshimmer" />
+		</attack>
+	</attacks>
+<defenses armor="1" defense="1"/>
+  <elements>
+		<element physicalPercent="1"/>
+		<element icePercent="1"/>
+		<element energyPercent="1"/>
+		<element holyPercent="1"/>
+		<element earth="1"/>
+		<element death="-1"/>
+	</elements>   
+  <immunities>
+    <immunity lifedrain="1"/>
+    <immunity paralyze="1"/>
+    <immunity outfit="1"/>
+    <immunity drunk="1"/>
+    <immunity invisible="1"/>
+  </immunities>
+<voices interval="5000" chance="10">
+<voice sentence="Give me your heart, I want to be alive right now!"/>
+</voices>
+	<loot>
+		<item name="crystal coin" countmax="100" chance="22222" />
+		<item name="eerie shard" countmax="1" chance="44444" />
+		<item name="small emerald" countmax="2" chance="9900" />
+		<item name="crystal coin" countmax="100" chance="11111" />
+		<item name="daramian mace" chance="6250" />
+		<item name="steel helmet" chance="5000" />
+		<item name="black shield" chance="1724" />
+		<item name="fist on a stick" chance="280" />
+	</loot>
+</monster>

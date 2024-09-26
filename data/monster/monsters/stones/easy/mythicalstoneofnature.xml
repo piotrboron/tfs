@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="Mythical Stone of Nature" nameDescription="a mythical stone of nature" race="undead" experience="8000" speed="0" skull = "red">
+   <health now="20000" max="20000"/>
+   <look typeex="12165" corpse="6027" />
+   <targetchange interval="5000" chance="8"/>
+   <strategy attack="100" defense="0"/>
+	<flags>
+	  <flag attackable="1"/>
+	  <flag hostile="1"/>
+	  <flag convinceable="0"/>
+	  <flag staticattack="0"/>
+	  <flag targetdistance="1"/>
+	  <flag runonhealth="0"/>
+	<flag ignorespawnblock="1" />
+	</flags>
+
+	<attacks>
+		<attack name="ice" interval="1064" chance="45" target="1" min="-1" max="-2">
+			<attribute key="shootEffect" value="ice"/>
+		</attack>
+		<attack name="ice" interval="1753" chance="25" target="0" radius="3" min="-1" max="-2">
+			<attribute key="areaEffect" value="icearea"/>
+		</attack>
+	</attacks>
+
+  <immunities>
+	<immunity paralyze="1"/>
+	<immunity lifedrain="1"/>
+	<immunity ice="1"/>
+    <immunity invisible="1"/>
+  </immunities>
+
+	<summons maxSummons="4">
+    <summon name="Earth Elemental" interval="1000" chance="13"/>
+  </summons>
+
+	<loot>
+		<item name="gold coin" countmax="30" chance="88000" />
+		<item name="small stone" countmax="10" chance="15800" />
+		<item name="iron ore" countmax="2" chance="88000" />
+		<item id="22614" countmax="1" chance="44000" />
+	</loot>
+
+</monster>

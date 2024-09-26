@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Flying Demon" nameDescription="a flying demon" race="blood" experience="854132" speed="400">
+	<health now="60000" max="60000" />
+	<look type="590" corpse="22549" />
+	<targetchange interval="4000" chance="10" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="1" />
+		<flag staticattack="90" />
+		<flag runonhealth="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="0" max="-3800" />
+		<attack name="energy" interval="2000" chance="10" length="6" spread="0" target="1" min="-250" max="-3800">
+			<attribute key="areaEffect" value="purpleenergy" />
+		</attack>
+		<attack name="energy" interval="2000" chance="10" length="8" spread="0" target="1" min="-350" max="-3800">
+			<attribute key="areaEffect" value="yellowenergy" />
+		</attack>
+		<attack name="energy" interval="2000" chance="20" radius="3" target="1" min="-100" max="-3000">
+			<attribute key="areaEffect" value="energy" />
+		</attack>
+    <attack name="fire" interval="2000" chance="28" range="7" radius="3" target="1" min="-1" max="-2500">
+      <attribute key="shootEffect" value="burstarrow"/>
+      <attribute key="areaEffect" value="firearea"/>
+    </attack>		
+		<attack name="demon outcast skill reducer" range="5" interval="2000" chance="10" />
+		<attack name="manadrain" interval="2000" chance="10" radius="4" target="0" min="-80" max="-150">
+			<attribute key="areaEffect" value="greenshimmer" />
+		</attack>
+	</attacks>
+	<defenses armor="40" defense="40">
+		<defense name="healing" interval="2000" chance="15" min="250" max="4000">
+			<attribute key="areaEffect" value="blueshimmer" />
+		</defense>
+	</defenses>
+	<elements>
+		<element physicalPercent="1" />
+		<element deathPercent="5" />
+		<element energyPercent="-5" />
+		<element icePercent="5" />
+		<element earthPercent="1" />
+		<element holyPercent="-5" />
+	</elements>
+	<immunities>
+		<immunity paralyze="1" />
+		<immunity invisible="1" />
+	</immunities>
+	<summons maxSummons="2">
+		<summon name="energy elemental" interval="2000" chance="10" />
+	</summons>
+	<voices interval="5000" chance="10">
+		<voice sentence="Back in the evil business!" />
+		<voice sentence="This prison break will have casualties!" />
+		<voice sentence="At last someone to hurt" />
+		<voice sentence="No one will imprison me again!" />
+	</voices>
+	<loot>
+		<item name="crystal coin" countmax="15" chance="22222" />
+    <item id="2160" countmax="7" chance="22000"/>	
+	<item id="18413" countmax="3" chance="22000" /> <!-- low crafting eq -->
+	<item id="18414" countmax="3" chance="20000" />
+	<item id="18415" countmax="3" chance="19000" />
+	<item id="18416" countmax="3" chance="16000" /> <!-- med crafting eq -->
+	<item id="18417" countmax="3" chance="16000" />
+	<item id="18418" countmax="3" chance="16000" />		 
+	<item id="18421" countmax="3" chance="16000" /> <!-- hard crafting eq -->
+	<item id="18420" countmax="3" chance="16000" />
+	<item id="18419" countmax="3" chance="16000" />	
+	</loot>
+</monster>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="[Pet] Panda" nameDescription="a pet panda" race="blood" experience="80" speed="777" manacost="255">
+    <health now="10000" max="10000" />
+    <look type="123" corpse="0" />
+    <targetchange interval="4000" chance="0" />
+    <flags>
+        <flag summonable="1" />
+        <flag attackable="0" />
+        <flag hostile="0" />
+        <flag illusionable="1" />
+        <flag convinceable="1" />
+        <flag pushable="1" />
+        <flag canpushitems="0" />
+        <flag canpushcreatures="0" />
+        <flag targetdistance="1" />
+        <flag canwalkonenergy="0" />
+        <flag canwalkonfire="0" />
+        <flag canwalkonpoison="0" />
+    </flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="0" max="-1250" />
+		<attack name="physical" interval="1500" chance="90" range="7" min="1" max="-3000">
+			<attribute key="shootEffect" value="suddendeath" />
+			<attribute key="areaEffect" value="mortarea" />
+		</attack>
+	</attacks>    
+	<voices interval="5000" chance="10">
+		<voice sentence="Grrrr" />
+		<voice sentence="Groar" />
+	</voices>    
+</monster>

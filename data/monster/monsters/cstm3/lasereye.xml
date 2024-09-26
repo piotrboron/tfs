@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Lasereye" nameDescription="a lasereye" race="undead" experience="1691132" speed="400">
+	<health now="87654" max="87654" />
+	<look type="583" corpse="22478" />
+	<targetchange interval="4000" chance="20" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="1" />
+		<flag staticattack="80" />
+		<flag runonhealth="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="0" max="-4123" />
+		<attack name="energy" interval="2000" chance="15" length="8" spread="0" target="1" min="-500" max="-4500">
+			<attribute key="areaEffect" value="yellowenergy" />
+		</attack>
+		<attack name="physical" interval="2000" chance="20" radius="1" target="1" min="0" max="-4500">
+			<attribute key="shootEffect" value="largerock" />
+		</attack>
+	</attacks>
+	<defenses armor="70" defense="70">
+		<defense name="healing" interval="2000" chance="30" min="550" max="1100">
+			<attribute key="areaEffect" value="blueshimmer" />
+		</defense>
+		<defense name="speed" interval="2000" chance="15" speedchange="520" duration="5000">
+			<attribute key="areaEffect" value="redshimmer" />
+		</defense>
+	</defenses>
+	<elements>
+		<element physicalPercent="1" />
+		<element deathPercent="1" />
+		<element firePercent="1" />
+		<element energyPercent="1" />
+		<element icePercent="1" />
+		<element earthPercent="1" />
+		<element holyPercent="-1" />
+	</elements>
+	<immunities>
+		<immunity paralyze="1" />
+		<immunity invisible="1" />
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="BOW LOW!" />
+		<voice sentence="FEEL THE TRUE MEANING OF VANQUISH!" />
+		<voice sentence="HAHAHAHA DO YOU WANT TO AMUSE YOUR MASTER?" />
+		<voice sentence="NOW YOU WILL SURRENDER!" />
+	</voices>
+	<loot>
+		<item name="crystal coin" countmax="33" chance="22222" />
+    <item id="2160" countmax="7" chance="22000"/>	
+	<item id="18413" countmax="3" chance="22000" /> <!-- low crafting eq -->
+	<item id="18414" countmax="3" chance="20000" />
+	<item id="18415" countmax="3" chance="19000" />
+	<item id="18416" countmax="3" chance="16000" /> <!-- med crafting eq -->
+	<item id="18417" countmax="3" chance="16000" />
+	<item id="18418" countmax="3" chance="16000" />		 
+	<item id="18421" countmax="4" chance="16000" /> <!-- hard crafting eq -->
+	<item id="18420" countmax="4" chance="16000" />
+	<item id="18419" countmax="4" chance="16000" />
+	<item name="war crystal" chance="21230" />
+
+	</loot>
+</monster>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="Mythical Stone of Craziness" nameDescription="a mythical stone of craziness" race="undead" experience="60000" speed="0" skull = "black">
+   <health now="27000" max="27000"/>
+	<look typeex="11572" corpse="6027"/>
+   <targetchange interval="5000" chance="8"/>
+   <strategy attack="100" defense="0"/>
+	<flags>
+	  <flag attackable="1"/>
+	  <flag hostile="1"/>
+	  <flag convinceable="0"/>
+	  <flag staticattack="0"/>
+	  <flag targetdistance="1"/>
+	  <flag runonhealth="0"/>
+		<flag ignorespawnblock="1" />
+	</flags>
+	<attacks>
+		<attack name="earth" interval="1064" chance="75" target="1" min="-1" max="-2">
+			<attribute key="shootEffect" value="earth"/>
+		</attack>
+		<attack name="earth" interval="1753" chance="55" target="0" radius="3" min="-1" max="-2">
+			<attribute key="areaEffect" value="carniphila"/>
+		</attack>
+	</attacks>
+  <immunities>
+
+	<immunity paralyze="1"/>
+	<immunity lifedrain="1"/>
+    <immunity invisible="1"/>
+  </immunities>
+
+	<summons maxSummons="3">
+    <summon name="Demon" interval="1000" chance="13"/>
+    <summon name="Fire Elemental" interval="1000" chance="13"/>
+    <summon name="Hand of Cursed Fate" interval="1000" chance="13"/>
+  </summons>
+
+	<loot>
+		<item name="gold coin" countmax="30" chance="88000" />
+		<item name="pulverized ore" countmax="6" chance="15800" />
+		<item id="22614" countmax="1" chance="64000" />
+		<item id="2268" countmax="100" chance="88000" />
+		<item id="26029" countmax="100" chance="88000" />
+	<item id="18413" countmax="3" chance="22000" /> <!-- low crafting eq -->
+	<item id="18414" countmax="3" chance="20000" />
+	<item id="18415" countmax="3" chance="19000" />
+	<item id="18416" countmax="3" chance="16000" /> <!-- med crafting eq -->
+	<item id="18417" countmax="3" chance="16000" />
+	<item id="18418" countmax="3" chance="16000" />		 
+	<item id="18421" countmax="3" chance="16000" /> <!-- hard crafting eq -->
+	<item id="18420" countmax="3" chance="16000" />
+	<item id="18419" countmax="3" chance="16000" />		
+	</loot>
+
+	<defenses armor="10" defense="30"/>
+
+</monster>

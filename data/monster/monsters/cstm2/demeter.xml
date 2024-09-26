@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Demeter" nameDescription="a Demeter" race="venom" experience="165000" speed="450" manacost="0"> 
+<health now="16000" max="16000"/>
+<look type="142" body="111" feet="111" head="111" legs="111" addons="3" corpse="6081"/>
+<strategy attack="100" defense="0"/>
+<flags>
+<flag summonable="0"/>
+<flag attackable="1"/>
+<flag hostile="1"/>
+<flag illusionable="1"/>
+<flag convinceable="0"/>
+<flag pushable="0"/>
+<flag canpushitems="1"/>
+<flag canpushcreatures="0"/>
+<flag targetdistance="1"/>
+<flag staticattack="90"/>
+<flag runonhealth="0"/>
+</flags>
+  <attacks>
+    <attack name="melee" interval="2000" min="-1" max="-2100"/>
+    <attack name="earth" interval="3000" chance="22" length="8" spread="3" min="-1" max="-2000">
+      <attribute key="areaEffect" value="smallplants"/>
+    </attack>
+		<attack name="energy" interval="3000" chance="35" range="7" min="-200" max="-1999">
+			<attribute key="shootEffect" value="energy" />
+		</attack>    
+		<attack name="ice" interval="2000" chance="5" radius="3" target="0" min="-60" max="-1700">
+			<attribute key="areaEffect" value="icetornado" />
+		</attack>
+		<attack name="ice" interval="2000" chance="10" target="1" radius="4" min="-100" max="-1000">
+			<attribute key="areaEffect" value="icearea" />
+		</attack>    
+  </attacks>
+<defenses armor="16" defense="19"/>
+  <elements>
+		<element physicalPercent="-1"/>
+		<element icePercent="-1"/>
+		<element energyPercent="-1"/>
+		<element holyPercent="-2"/>
+		<element earth="1"/>
+		<element death="-1"/>
+	</elements>   
+  <immunities>
+    <immunity physical="0"/>
+    <immunity energy="0"/>
+    <immunity fire="1"/>
+    <immunity poison="0"/>
+    <immunity lifedrain="1"/>
+    <immunity paralyze="1"/>
+    <immunity outfit="1"/>
+    <immunity drunk="1"/>
+    <immunity invisible="1"/>
+  </immunities>
+<voices interval="5000" chance="10">
+<voice sentence="Have you seen my daughter, Kora?"/>
+</voices>
+ <loot>
+   <item id="2160" countmax="8" chance1="36666" chancemax="0"/> --Gold Coin
+		<item id="18413" countmax="2" chance="22000" /> <!-- low crafting eq -->
+		<item id="18414" countmax="2" chance="20000" />
+		<item id="18415" countmax="2" chance="19000" />
+		<item id="18416" countmax="2" chance="16000" /> <!-- med crafting eq -->
+		<item id="18417" countmax="2" chance="16000" />
+		<item id="18418" countmax="2" chance="16000" />		     
+   <item id="9808" countmax="1" chance1="300" chancemax="0"/> -- rusty armor
+   <item id="6558" countmax="3" chance1="5555" chancemax="0"/> --Concentrated Demonic Blood
+   <item id="2666" countmax="1" chance1="25000" chancemax="0"/> --Meat
+   <item id="6500" countmax="1" chance1="2500" chancemax="0"/> --Demonic Essence
+   <item id="1987" chance="100000"> --Bag
+       <inside>
+	      <item id="11217" countmax="3" chance="300"/> --Soul Orb
+		  <item id="9813" chance="2470"/> --
+	   	  <item id="7368" countmax="1" chance1="1200" chancemax="0"/> --Assassin Star
+           <item id="5911" chance="1800"/> --Red Piece of Cloth
+       </inside>
+     
+   </item>
+
+ </loot>
+</monster>

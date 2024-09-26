@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Chaser" nameDescription="a chaser" race="venom" experience="180000" speed="660" manacost="0">
+<health now="6500" max="6500"/>
+<look type="323" corpse="6080"/>
+<targetchange interval="5000" chance="12"/>
+<strategy attack="100" defense="0"/>
+<flags>
+<flag summonable="0"/>
+<flag attackable="1"/>
+<flag hostile="1"/>
+<flag illusionable="1"/>
+<flag convinceable="0"/>
+<flag pushable="0"/>
+<flag canpushitems="1"/>
+<flag canpushcreatures="0"/>
+<flag targetdistance="1"/>
+<flag staticattack="90"/>
+<flag runonhealth="0"/>
+</flags>
+<attacks>
+<attack name="melee" interval="2000" min="-1000" max="-13000"/>
+</attacks>
+<defenses armor="16" defense="19"/>
+  <elements>
+		<element physicalPercent="40"/>
+		<element icePercent="75"/>
+		<element energyPercent="40"/>
+		<element holyPercent="50"/>
+		<element earth="50"/>
+		<element death="-25"/>
+	</elements>   
+  <immunities>
+    <immunity physical="0"/>
+    <immunity energy="0"/>
+    <immunity fire="1"/>
+    <immunity poison="0"/>
+    <immunity lifedrain="1"/>
+    <immunity paralyze="1"/>
+    <immunity outfit="1"/>
+    <immunity drunk="1"/>
+    <immunity invisible="1"/>
+  </immunities>
+<voices interval="5000" chance="10">
+<voice sentence="Caassjhd dsjasjas... BRAIN!"/>
+</voices>
+ <loot>
+   <item id="2160" countmax="8" chance1="36666" chancemax="0"/> --Gold Coin
+ 	<item id="2160" countmax="10" chance1="80000" chancemax="0"/> -- gold coins
+   <item id="2150" countmax="3" chance1="8000" chancemax="0"/> --Small Amethysts
+   <item id="2645" chance="600"/> --Steel Boots
+<item id="12410" chance="15"/>
+	<item id="11217" chance="10000000"/> --Soul Orb
+   <item id="6558" countmax="3" chance1="5555" chancemax="0"/> --Concentrated Demonic Blood
+   <item id="2666" countmax="1" chance1="25000" chancemax="0"/> --Meat
+   <item id="6500" countmax="1" chance1="2500" chancemax="0"/> --Demonic Essence
+   <item id="1987" chance="100000"> --Bag
+       <inside>
+	      <item id="11217" chance="300"/> --Soul Orb
+		  <item id="9813" chance="2470"/> --
+	   	  <item id="7368" countmax="1" chance1="1200" chancemax="0"/> --Assassin Star
+           <item id="5911" chance="1800"/> --Red Piece of Cloth
+       </inside>
+   </item>
+
+ </loot>
+</monster>

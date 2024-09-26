@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Immortal Warrior" nameDescription="an immortal warrior" race="venom" experience="145231" speed="690" manacost="0">
+<health now="16000" max="16000"/>
+<look type="306" corpse="6080"/>
+<targetchange interval="5000" chance="12"/>
+<strategy attack="100" defense="0"/>
+<flags>
+<flag summonable="0"/>
+<flag attackable="1"/>
+<flag hostile="1"/>
+<flag illusionable="1"/>
+<flag convinceable="0"/>
+<flag pushable="0"/>
+<flag canpushitems="1"/>
+<flag canpushcreatures="0"/>
+<flag targetdistance="1"/>
+<flag staticattack="90"/>
+<flag runonhealth="0"/>
+</flags>
+<attacks>
+<attack name="melee" interval="2000" min="-700" max="-1200"/>
+</attacks>
+<defenses armor="16" defense="19"/>
+  <elements>
+		<element physicalPercent="1"/>
+		<element icePercent="1"/>
+		<element energyPercent="1"/>
+		<element holyPercent="1"/>
+		<element earth="1"/>
+		<element death="-1"/>
+	</elements>   
+  <immunities>
+    <immunity lifedrain="1"/>
+    <immunity paralyze="1"/>
+    <immunity outfit="1"/>
+    <immunity drunk="1"/>
+    <immunity invisible="1"/>
+  </immunities>
+<voices interval="5000" chance="10">
+<voice sentence="I'm looking my princess Somalia, have you seen him?"/>
+</voices>
+  <loot>
+    <item id="2160" countmax="7" chance="22000"/>	
+	<item id="18413" countmax="2" chance="22000" /> <!-- low crafting eq -->
+	<item id="18414" countmax="2" chance="20000" />
+	<item id="18415" countmax="2" chance="19000" />
+	<item id="18416" countmax="2" chance="16000" /> <!-- med crafting eq -->
+	<item id="18417" countmax="2" chance="16000" />
+	<item id="18418" countmax="2" chance="16000" />		 
+	<item id="18421" countmax="2" chance="16000" /> <!-- hard crafting eq -->
+	<item id="18420" countmax="2" chance="16000" />
+	<item id="18419" countmax="2" chance="16000" />
+</loot>
+</monster>

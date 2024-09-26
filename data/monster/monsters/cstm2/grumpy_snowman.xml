@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Grumpy Snowman" nameDescription="a grumpy snowman" race="blood" experience="170000" speed="500" manacost="0">
+  <health now="15000" max="15000"/>
+   <look typeex="7173" corpse="6080"/>
+  <targetchange interval="2000" chance="15"/>
+  <strategy attack="100" defense="0"/>
+<flags>
+<flag summonable="0"/>
+<flag attackable="1"/>
+<flag hostile="1"/>
+<flag illusionable="1"/>
+<flag convinceable="0"/>
+<flag pushable="0"/>
+<flag canpushitems="1"/>
+<flag canpushcreatures="0"/>
+<flag targetdistance="1"/>
+<flag staticattack="90"/>
+<flag runonhealth="0"/>
+</flags>
+  <attacks>
+    <attack name="melee" interval="2000" min="-100" max="-1666"/>
+    <attack name="outfit" interval="1000" chance="10" range="7" item="6512" duration="8000">
+       <attribute key="areaEffect" value="blueshimmer"/>
+     </attack>
+	<attack name="physical" interval="1000" chance="7" length="6" spread="3" min="0" max="-1200">
+      <attribute key="areaEffect" value="iceattack"/>
+    </attack>
+    <attack name="ice" interval="2000" chance="15" length="4" spread="2" min="-5" max="-1200">
+      <attribute key="areaEffect" value="icearea"/>
+    </attack>
+    <attack name="ice" interval="1000" chance="9" range="7" target="1" min="-0" max="-1200">
+      <attribute key="shootEffect" value="snowball"/>
+	  <attribute key="areaEffect" value="iceattack"/>
+    </attack>
+  </attacks>
+  <defenses armor="20" defense="25">
+    <defense name="healing" interval="1000" chance="25" min="50" max="80">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+  </defenses>
+  <elements>
+  <element firePercent="-50"/>
+  <element earthPercent="1"/>
+  <element holyPercent="1"/>
+  <element energyPercent="-1"/>
+  <element deathPercent="-1"/>
+  </elements>
+  <immunities>
+    <immunity ice="1"/>
+    <immunity paralyze="1"/>
+    <immunity invisible="1"/>
+  </immunities>
+  <voices interval="2000" chance="5">
+    <voice sentence="Santa won't arrive, I KILLED HIM!"/>
+    <voice sentence="Are you waiting for Christmas? HAHAHHAHA, POOR KID..."/>
+    <voice sentence="WINTER, WINTER, WINTER!"/>
+  </voices>
+  <loot>
+    <item id="2160" countmax="7" chance="22000"/>	
+	<item id="18413" countmax="2" chance="22000" /> <!-- low crafting eq -->
+	<item id="18414" countmax="2" chance="20000" />
+	<item id="18415" countmax="2" chance="19000" />
+	<item id="18416" countmax="2" chance="16000" /> <!-- med crafting eq -->
+	<item id="18417" countmax="2" chance="16000" />
+	<item id="18418" countmax="2" chance="16000" />		 
+	<item id="18421" countmax="2" chance="16000" /> <!-- hard crafting eq -->
+	<item id="18420" countmax="2" chance="16000" />
+	<item id="18419" countmax="2" chance="16000" />
+</loot>
+</monster>

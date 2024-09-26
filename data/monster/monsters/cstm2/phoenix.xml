@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Phoenix" nameDescription="a Phoenix, immortality bird" race="venom" experience="98605005" speed="840" manacost="0"> 
+<health now="405100" max="405100"/>
+  <look type="217" head="30" body="30" legs="30" feet="30" corpse="6056"/>
+<strategy attack="100" defense="0"/>
+<flags>
+<flag summonable="0"/>
+<flag attackable="1"/>
+<flag hostile="1"/>
+<flag illusionable="1"/>
+<flag convinceable="0"/>
+<flag pushable="0"/>
+<flag canpushitems="1"/>
+<flag canpushcreatures="0"/>
+<flag targetdistance="1"/>
+<flag staticattack="90"/>
+<flag runonhealth="0"/>
+</flags>
+<attacks>
+    <attack name="melee" interval="2000" min="-300" max="-43868"/>
+    <attack name="fire" interval="2000" chance="17" range="7" radius="4" target="1" min="-2500" max="-38350">
+      <attribute key="shootEffect" value="fire"/>
+      <attribute key="areaEffect" value="firearea"/>
+    </attack>
+    <attack name="fire" interval="3000" chance="17" length="8" spread="3" min="-2500" max="-31350">
+      <attribute key="areaEffect" value="firearea"/>
+    </attack>
+  </attacks>
+<defenses armor="16" defense="19"/>
+  <elements>
+		<element physicalPercent="-30"/>
+		<element icePercent="-50"/>
+		<element firePercent="100"/>
+		<element energyPercent="20"/>
+		<element holyPercent="20"/>
+		<element earth="-30"/>
+		<element death="-30"/>
+	</elements>   
+  <immunities>
+    <immunity physical="0"/>
+    <immunity energy="0"/>
+    <immunity fire="1"/>
+    <immunity poison="0"/>
+    <immunity lifedrain="1"/>
+    <immunity paralyze="1"/>
+    <immunity outfit="1"/>
+    <immunity drunk="1"/>
+    <immunity invisible="1"/>
+  </immunities>
+<voices interval="5000" chance="23">
+<voice sentence="I'm immortality, you can't kill me."/>
+<voice sentence="I was born from the ashes!"/>
+<voice sentence="Fire is my mother..."/>
+</voices>
+ <loot>
+   <item id="2160" countmax="5" chance1="100000" chancemax="0"/> --Gold Coin
+   <item id="2150" countmax="1" chance1="500" chancemax="0"/> --Small Amethysts
+   <item id="2645" chance="600"/> --Steel Boots
+     <item id="11210" countmax="1" chance1="430" chancemax="0"/> -- exp scroll
+	<item id="11217" countmax="4" chance="10000000"/> --Soul Orb
+<item id="12410" chance="15"/>
+   <item id="6558" countmax="3" chance1="5555" chancemax="0"/> --Concentrated Demonic Blood
+   <item id="2666" countmax="1" chance1="25000" chancemax="0"/> --Meat
+   <item id="6500" countmax="1" chance1="2500" chancemax="0"/> --Demonic Essence
+   <item id="1987" chance="100000"> --Bag
+       <inside>
+	      <item id="11217" countmax="3" chance="300"/> --Soul Orb
+		  <item id="9813" chance="2470"/> --
+	   	  <item id="7368" countmax="1" chance1="1200" chancemax="0"/> --Assassin Star
+           <item id="5911" chance="1800"/> --Red Piece of Cloth
+       </inside>
+   </item>
+
+ </loot>
+</monster>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Santa Claus" nameDescription="a santa claus" race="blood" experience="115005" speed="520" manacost="300">
+	<health now="90100" max="90100"/>
+	<look type="153" body="94" feet="114" head="0" legs="94" addons="3" corpse="3058"/>
+	<targetchange interval="4000" chance="0"/>
+	<strategy attack="100" defense="0"/>
+<flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+  </flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="-1" max="-3"/>
+	</attacks>
+	<defenses armor="40" defense="40"/>
+	<elements>
+		<element physicalPercent="90"/>
+		<element energyPercent="90"/>
+		<element holyPercent="90"/>
+		<element earth="90"/>
+		<element death="90"/>
+	</elements>
+	<voices interval="4000" chance="16">
+		<voice sentence="Ho ho ho!"/>
+		<voice sentence="Merry Christmas!"/>
+		<voice sentence="Merry Christmas, childrens!"/>
+		<voice sentence="Ho, ho, ho! Merry Christmas!"/>
+	</voices>
+	<loot>
+ 	<item id="2160" countmax="100" chance1="100000" chancemax="0"/> -- gold coins
+ 	<item id="2160" countmax="100" chance1="80000" chancemax="0"/> -- gold coins
+	<item id="2688" countmax="100" chance1="80000" chancemax="0"/> -- candies
+<item id="9007" countmax="1" chance1="6000" chancemax="0"/> -- candies
+<item id="6492" countmax="1" chance1="6000" chancemax="0"/> -- candies
+<item id="6502" countmax="1" chance1="6000" chancemax="0"/> -- candies
+<item id="6527" countmax="4" chance1="6000" chancemax="0"/> -- candies
+<item id="6505" countmax="1" chance1="6000" chancemax="0"/> -- candies
+<item id="6489" countmax="1" chance1="6000" chancemax="0"/> -- candies
+ 
+	<item id="2152" countmax="1" chance1="3500" chancemax="0"/> -- platinum coin
+ 	<item id="1987" chance="100000">
+ 	<inside>
+
+    
+
+ 
+ 
+ 	</inside>
+ 	</item>
+</loot>
+</monster>
+

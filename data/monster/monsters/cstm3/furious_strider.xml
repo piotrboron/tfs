@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Furious Strider" nameDescription="a furious strider" race="undead" experience="984132" speed="500">
+	<health now="71600" max="71600" />
+	<look type="497" corpse="17420" />
+	<targetchange interval="4000" chance="10" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="0" />
+		<flag targetdistance="1" />
+		<flag staticattack="80" />
+		<flag runonhealth="0" />
+		<flag ignorespawnblock="1"/>		
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="0" max="-4100" />
+		<attack name="physical" interval="2000" chance="20" radius="4" target="1" min="0" max="-4000">
+			<attribute key="shootEffect" value="largerock" />
+			<attribute key="areaEffect" value="stones" />
+		</attack>
+		<attack name="cliff strider skill reducer" interval="2000" chance="10" />
+		<attack name="cliff strider electrify" range="1" interval="2000" chance="15" />
+		<attack name="physical" interval="2000" chance="10" length="6" spread="0" target="0" min="0" max="-3000">
+			<attribute key="areaEffect" value="groundshaker" />
+		</attack>
+		<attack name="manadrain" interval="2000" chance="15" radius="4" target="0" min="-100" max="-1000">
+			<attribute key="areaEffect" value="yellowenergy" />
+		</attack>
+	</attacks>
+	<defenses armor="1" defense="1" />
+	<elements>
+		<element firePercent="1" />
+		<element physicalPercent="1" />
+		<element deathPercent="1" />
+		<element icePercent="1" />
+	</elements>
+	<immunities>
+		<immunity paralyze="1" />
+		<immunity invisible="1" />
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Knorrrr" />
+	</voices>
+	<loot>
+		<item name="crystal coin" countmax="17" chance="22222" />
+    <item id="2160" countmax="7" chance="22000"/>	
+	<item id="18413" countmax="3" chance="22000" /> <!-- low crafting eq -->
+	<item id="18414" countmax="3" chance="20000" />
+	<item id="18415" countmax="3" chance="19000" />
+	<item id="18416" countmax="3" chance="16000" /> <!-- med crafting eq -->
+	<item id="18417" countmax="3" chance="16000" />
+	<item id="18418" countmax="3" chance="16000" />		 
+	<item id="18421" countmax="3" chance="16000" /> <!-- hard crafting eq -->
+	<item id="18420" countmax="3" chance="16000" />
+	<item id="18419" countmax="3" chance="16000" />	
+	</loot>
+</monster>

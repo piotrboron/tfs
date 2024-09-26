@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<raid>
+	<!-- Message broadcast -->
+	<!-- Broadcast types: warning, event, default, description, smallstatus, blueconsole, redconsole -->
+	<announce delay="1000" type="warning" message="XP Rabbits are spawning all around Mythoria city!" />
+
+	<!-- Area spawns - you can specify raid area or use range value -->
+	<areaspawn delay="2000" radius="100" centerx="1000" centery="1000" centerz="7">
+		<monster name="XP Rabbit" amount="125" /><!-- Specified amount -->
+	</areaspawn>
+
+</raid>

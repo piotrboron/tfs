@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Mythical Earth Stone" nameDescription="a mythical earth stone" race="undead" experience="2400" speed="0" skull = "red">
+	<health now="2500" max="2500"/>
+	<look typeex="1353" corpse="6027" />
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+    <flags> 
+      <flag attackable="1"/> 
+      <flag hostile="1"/> 
+      <flag convinceable="0"/> 
+      <flag staticattack="0"/> 
+      <flag targetdistance="1"/> 
+      <flag runonhealth="0"/>
+      <flag ignorespawnblock="1" />
+    </flags> 
+	
+	<attacks>
+		<attack name="melee" interval="2000" min="-1" max="-2"/>
+		
+		<attack name="earth" interval="1064" chance="55" target="2" min="-1" max="-2"> 
+            <attribute key="shootEffect" value="earth"/> 
+        </attack>
+
+        <attack name="earth" interval="1753" chance="25" target="0" radius="9" min="-1" max="-2"> 
+            <attribute key="areaEffect" value="smallplants"/> 
+        </attack> 
+		
+	</attacks>
+
+	<elements>
+        <element icePercent="20"/> 
+        <element firePercent="20"/> 
+        <element physicalPercent="-40"/> 
+        <element deathPercent="20"/> 
+        <element holyPercent="20"/> 
+        <element energyPercent="20"/> 
+        <element earthPercent="20"/> 
+	</elements>
+	<immunities>
+		<immunity lifedrain="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<summons maxSummons="9">
+    <summon name="Elf Scout" interval="1000" chance="13"/>
+    <summon name="Elf" interval="1000" chance="13"/>
+    <summon name="Elf Arcanist" interval="1000" chance="13"/>
+  </summons>
+	<loot>
+		<item name="gold coin" countmax="30" chance="88000" />
+		<item name="iron ore" countmax="2" chance="88000" />
+		<item name="small stone" countmax="10" chance="15800" />
+		<item id="22614" countmax="1" chance="8000" />
+	</loot>
+</monster>

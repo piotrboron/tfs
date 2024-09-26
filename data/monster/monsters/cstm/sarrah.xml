@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Sarrah" nameDescription="a sarrah" race="blood" experience="25000" speed="560" manacost="0">
+  <health now="2400" max="2400"/>
+  <look type="289" head="0" body="38" legs="94" feet="0" addons="3" corpse="6080"/>
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="95"/>
+    <flag runonhealth="500"/>
+  </flags>
+  <attacks>
+	<attack name="melee" interval="1000" min="-100" max="-1700" poison="120"/>
+
+    <attack name="fire" interval="1600" chance="20" range="3" min="-700" max="-1350">
+      <attribute key="shootEffect" value="burstarrow"/>
+      <attribute key="areaEffect" value="explosionarea"/>
+    </attack>
+
+    <attack name="lifedrain" interval="1800" chance="30" radius="5" target="0" min="-700" max="-1200">
+      <attribute key="areaEffect" value="purplenote"/>
+    </attack>	
+	
+	<attack name="earth" interval="3000" chance="27" length="4" spread="3" min="-450" max="-1000">
+	<attribute key="areaEffect" value="yellowbubble"/>
+	</attack>
+	
+	<attack name="energy" interval="1600" chance="9" length="8" spread="0" min="-600" max="-1200">
+	<attribute key="areaEffect" value="redshimmer"/>
+	</attack>
+
+	<attack name="speed" interval="2000" chance="20" range="1" target="1" radius="4" speedchange="-400" duration="20000">
+	<attribute key="areaEffect" value="poison"/>
+	</attack>
+</attacks>
+  <defenses armor="65" defense="55">
+    <defense name="healing" interval="1000" chance="8" min="2300" max="3400">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+    <defense name="speed" interval="1000" chance="17" speedchange="360" duration="6000">
+      <attribute key="areaEffect" value="redshimmer"/>
+    </defense>
+  </defenses>
+  <elements>
+		<element firePercent="-20"/>
+		<element energyPercent="10"/>
+		<element icePercent="15"/>
+		<element holyPercent="-10"/>
+		<element deathPercent="20"/>
+</elements>
+  <immunities>
+    <immunity earth="1"/>
+    <immunity paralyze="1"/>
+    <immunity outfit="1"/>
+    <immunity drunk="1"/>
+    <immunity invisible="1"/>
+  </immunities>
+<loot>
+<item id="2152" chance="100000" countmax="26" /> -- platinuym coin
+
+<item id="2148" chance="70000" countmax="80" /> -- gold coin
+
+<item id="7410" chance="700" /> -- queens sceptre
+<item id="2472" chance="2000" /> -- MPA
+<item id="8890" chance="2000" /> -- Robe of the Underworld
+<item id="8890" chance="700" /> -- G LEGS
+<item id="2444" chance="700" /> -- hammer of wrath
+	<item id="2127" chance="1818"/> -- emerald bangle
+	<item id="2187" chance="1111"/> -- wand of Inferno
+	<item id="2146" chance="1000" countmax="1"/> -- small sapphire
+<item id="2477" chance="2000" /> -- knight legs
+<item id="1987" chance="100000" > -- bag
+<inside>
+<item id="7365" chance="5000" countmax="3" /> -- onyx arrow
+<item id="2148" chance="10000" countmax="51" /> -- gold coin
+	<item id="2492" chance="400" /> -- DSM
+	<item id="2645" chance="700" /> -- steel boots
+	<item id="2417" chance="6667" /> -- battle hammer
+	<item id="2509" chance="10000" /> -- steel shield
+	<item id="2513" chance="10000" /> -- steel shield
+	<item id="8879" chance="600" /> 
+	<item id="2270" chance="650" /> 
+	<item id="2169" chance="3222" /> -- club ring
+	<item id="2079" chance="600" /> -- war horn
+	<item id="9810" chance="650" /> -- rare rusty armor
+	<item id="2209" chance="3222" /> -- club ring
+</inside>
+</item>
+</loot>
+</monster>

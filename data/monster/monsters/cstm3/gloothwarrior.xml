@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Glooth Warrior" nameDescription="a glooth warrior" race="undead" experience="811132" speed="470">
+	<health now="55000" max="55000" />
+	<look type="500" corpse="18384" />
+	<targetchange interval="5000" chance="8" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="1" />
+		<flag staticattack="50" />
+		<flag runonhealth="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1300" min="0" max="-3000" />
+		<attack name="speed" interval="2000" chance="20" range="7" speedchange="-400" duration="2500">
+			<attribute key="shootEffect" value="whirlwindaxe" />
+		</attack>
+		<attack name="fire" interval="2000" chance="100" range="7" min="-820" max="-3000">
+			<attribute key="areaEffect" value="firearea" />
+		</attack>
+		<attack name="energy" interval="1000" chance="12" range="3" target="1" min="-350" max="-3000">
+			<attribute key="areaEffect" value="purpleenergy" />
+		</attack>
+	</attacks>
+	<defenses armor="25" defense="35">
+		<defense name="healing" interval="1000" chance="25" min="1000" max="2000">
+			<attribute key="areaEffect" value="blueshimmer" />
+		</defense>
+	</defenses>
+	<elements>
+		<element physicalPercent="1" />
+		<element deathPercent="-1" />
+		<element energyPercent="-1" />
+	</elements>
+	<immunities>
+		<immunity outfit="1" />
+		<immunity earth="1" />
+		<immunity drown="1" />
+		<immunity paralyze="1" />
+		<immunity invisible="1" />
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Deeestructiooon!" />
+		<voice sentence="Maaahhhrrr!" />
+		<voice sentence="You are nothing!" />
+		<voice sentence="Taaake ... this!" />
+	</voices>
+	<loot>
+		<item name="crystal coin" countmax="16" chance="22222" />
+    <item id="2160" countmax="7" chance="22000"/>	
+	<item id="18413" countmax="3" chance="22000" /> <!-- low crafting eq -->
+	<item id="18414" countmax="3" chance="20000" />
+	<item id="18415" countmax="3" chance="19000" />
+	<item id="18416" countmax="3" chance="16000" /> <!-- med crafting eq -->
+	<item id="18417" countmax="3" chance="16000" />
+	<item id="18418" countmax="3" chance="16000" />		 
+	<item id="18421" countmax="3" chance="16000" /> <!-- hard crafting eq -->
+	<item id="18420" countmax="3" chance="16000" />
+	<item id="18419" countmax="3" chance="16000" />	
+	</loot>
+</monster>

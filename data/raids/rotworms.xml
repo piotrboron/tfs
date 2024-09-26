@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<raid>
+	<!-- Message broadcast -->
+	<!-- Broadcast types: warning, event, default, description, smallstatus, blueconsole, redconsole -->
+	<announce delay="1000" type="warning" message="Lots of rotworms are spawning in Rotworm EXP EASY area!" />
+
+	<!-- Area spawns - you can specify raid area or use range value -->
+	<areaspawn delay="2000" radius="50" centerx="1163" centery="1005" centerz="12">
+		<monster name="Rotworm" amount="50" /><!-- Specified amount -->
+	</areaspawn>
+
+</raid>
